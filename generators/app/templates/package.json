@@ -1,0 +1,30 @@
+{
+  "name": "<%= name %>",
+  "version": "<%= version %>",
+  "description": "<%= name %>",
+  "main": "app.js",
+  "scripts": {
+    "start": "gulp start"
+  },
+  "keywords": [
+    "<%= name %>"
+  ],
+  "author": "<%= author %>",
+  "license": "<%= license %>",
+  "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-inject": "^4.0.0",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-task-listing": "^1.0.1",
+    "wiredep": "^4.0.0"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
