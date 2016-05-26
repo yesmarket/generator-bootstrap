@@ -6,7 +6,6 @@ var mkdirp = require('mkdirp');
 module.exports = generators.Base.extend({
 
 	prompting: function() {
-		//var done = this.async();
 		return this.prompt([{
 			type: 'input',
 			name: 'name',
@@ -29,7 +28,6 @@ module.exports = generators.Base.extend({
 		}]).then(function(answers) {
 			this.props = answers
 			this.log(answers.name);
-			//done();
 		}.bind(this));
 	},
 
@@ -74,8 +72,8 @@ module.exports = generators.Base.extend({
 	  	},
 
 	  	//Install Dependencies
-		// install: function() {
-		// 	this.installDependencies();
-		// }
+		install: function() {
+			this.installDependencies();
+		}
 	}
 });
